@@ -2,8 +2,8 @@ class Gma_conversation
 
 	user_input = ""
 	gresponse1 = "HUH?!, SPEAK UP SONNY!"
-	gresponse2 = "NO, NOT SINCE #{number}"
 	number = rand(1930..1980)
+	gresponse2 = "NO, NOT SINCE #{number}"	
 
 	print "What do you have to say to your Grandmother? "
 	user_input = gets.chomp
