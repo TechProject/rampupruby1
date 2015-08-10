@@ -13,6 +13,6 @@ class Making_an_average
 	third.to_f
 
 	average = (first.to_f + second.to_f + third.to_f) / 3
-	puts "The average of the number is #{average}"
+	puts "The average of the numbers is #{average}"
 end
 
