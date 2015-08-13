@@ -10,7 +10,7 @@ array = (1..100).to_a
 puts array
 
 array.each do |number|
-	puts number
+puts number
 
 	if number % 3 == 0
 	puts "fizz"
