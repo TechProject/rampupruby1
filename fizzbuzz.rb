@@ -22,3 +22,22 @@ puts number
 		puts "fizzbuzz"
 	end
 end
+
+
+def is_divisible(number, by)
+	number % by == 0
+end
+
+#using functions
+
+def fizzbuzz number
+	if is_divisible(number, 15)
+	puts "fizz"
+	end
+	elsif is_divisible(number, 5)
+		puts "buzz"
+	end
+	else is_divisible(number, 3)
+		puts "fizzbuzz"
+	end
+end
