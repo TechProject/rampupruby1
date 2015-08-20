@@ -13,7 +13,7 @@ class Gma_conversation
 		elsif user_input == "BYE BYE BYE"
 			puts "Goodbye my grandchild."
 			return
-		else user_input == user_input.upcase
+		else user_input == .match(user_input.upcase)
 			puts gresponse2	
 		end
 	end
