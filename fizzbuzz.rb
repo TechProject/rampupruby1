@@ -6,6 +6,7 @@
 
 # print fizzbuzz if # is divisable by both 5 and 3
 
+
 numbers = (1..100).to_a
 puts array
 
