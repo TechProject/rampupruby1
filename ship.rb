@@ -14,7 +14,7 @@ class Ship
 		elsif Gosu::button_down? Gosu::KbRight
 			@x += @speed
 			#move right
-		elsif Gosu::KbSpace
+		elsif Gosu::KbSpace?
 			@y -= @speed	
 		end
 	end
