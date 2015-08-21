@@ -12,12 +12,12 @@ class MyWindow < Gosu::Window
    self.caption = 'Space Paranoia'
    @ship = Ship.new
    @asteroids = []
-   @projectile
+   @projectile = []
   end
 
    def update
    	@ship.update
-    @projectile
+    @projectile.update
     if rand(1..100) < 5
       @asteroids << Asteroid.new
     end 
@@ -28,7 +28,7 @@ class MyWindow < Gosu::Window
 
    def draw
    	@ship.draw
-    @projectile
+    @projectile.draw
     @asteroids.each do |asteroid|
       asteroid.draw
     end
