@@ -5,7 +5,7 @@ require './projectile'
 
 class MyWindow < Gosu::Window
 	WIDTH = 640
-	HEIGHT = 480h
+	HEIGHT = 480
 
   def initialize
    super(WIDTH, HEIGHT, false)
@@ -17,13 +17,21 @@ class MyWindow < Gosu::Window
 
    def update
    	@ship.update
-    @projectile.update
+    
     if rand(1..100) < 5
       @asteroids << Asteroid.new
     end 
       @asteroids.each do |asteroid|
-      asteroid.update
+        asteroid.update
     end
+
+    if rand(1..3)
+      @projectile << Projectile.new
+    end
+      @projectile.each do |projectile|
+        projectile.update
+    end
+
    end
 
    def draw
