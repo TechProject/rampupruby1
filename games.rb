@@ -25,7 +25,7 @@ class MyWindow < Gosu::Window
         asteroid.update
     end
 
-    if rand(1..3) 
+    if rand(1..3) < 3
       @projectile << Projectile.new
     end
       @projectile.each do |projectile|
