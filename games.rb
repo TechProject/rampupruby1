@@ -36,10 +36,13 @@ class MyWindow < Gosu::Window
 
    def draw
    	@ship.draw
-    @projectile.draw
+    
     @asteroids.each do |asteroid|
       asteroid.draw
     end
+
+    @projectile.each do |projectile|
+      projectile.draw
    end
   
 end
